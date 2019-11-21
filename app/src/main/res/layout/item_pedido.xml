@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="horizontal"
+    android:padding="16dp"
+    android:weightSum="1"
+    android:descendantFocusability="blocksDescendants">
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical"
+        android:layout_marginLeft="20dp"
+        android:orientation="vertical"
+        android:layout_weight="1">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/lblNombrePedido"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginBottom="5dp"
+                android:layout_weight="1"
+                android:fontFamily="sans-serif-medium"
+                android:textAllCaps="true"
+                android:textColor="@android:color/black"
+                android:textSize="12sp"
+                tools:text="Nombre del producto" />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/lblEstupidoParentesisAbierto"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="(" />
+
+                <TextView
+                    android:id="@+id/lblCantidadDeRepPedido"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="1" />
+
+                <TextView
+                    android:id="@+id/lblEstupidoParentesisCerrado"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text=")" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+
+        <TextView
+            android:id="@+id/lblDescripcionPedido"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="start"
+            android:layout_weight="1"
+            android:textColor="@color/colorAccent"
+            android:textSize="18sp"
+            tools:text="" />
+
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:layout_gravity="center_vertical"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal">
+
+            <ImageButton
+                android:id="@+id/imgbtnMas"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                app:srcCompat="@android:color/background_dark" />
+
+            <ImageButton
+                android:id="@+id/imgbtnMenos"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                app:srcCompat="@android:color/background_dark" />
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/lblPrecioPedido"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Bs. 0.00" />
+
+    </LinearLayout>
+
+
+</LinearLayout>

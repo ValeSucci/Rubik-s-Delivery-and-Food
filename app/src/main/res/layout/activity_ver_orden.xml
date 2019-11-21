@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="notanamelessentreprise.rubiksdeliveryandfood.VerOrdenActivity">
+
+    <!--lbl ocultar orden-->
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/tlbCerrarVerOrden"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="12dp"
+        android:layout_marginStart="12dp"
+        android:background="@color/colorAccent"
+        android:minHeight="?attr/actionBarSize"
+        android:theme="?attr/actionBarTheme" />
+
+        <ListView
+            android:id="@+id/lstPedidos"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tlbCerrarVerOrden"
+            android:layout_alignParentStart="true"
+            android:layout_above="@+id/lblPrecioTotalAPagar" />
+
+    <Button
+            android:id="@+id/btnConfirmarPedido"
+            android:layout_gravity="right"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="CONFIRMAR"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentEnd="true"
+            android:layout_marginEnd="18dp"
+            android:layout_marginBottom="28dp" />
+
+    <TextView
+        android:id="@+id/lblPrecioTotalAPagar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="left"
+        android:padding="5dp"
+        android:textSize="16sp"
+        android:layout_marginBottom="7dp"
+        android:text="Bs. 0.00"
+        android:layout_marginStart="40dp"
+        android:layout_above="@+id/btnConfirmarPedido"
+        android:layout_alignParentStart="true" />
+
+</RelativeLayout>

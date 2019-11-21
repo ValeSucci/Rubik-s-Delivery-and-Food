@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="notanamelessentreprise.rubiksdeliveryandfood.VistaDeDetalleActivity">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentStart="true">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:orientation="vertical"
+            android:weightSum="1">
+
+            <ImageView
+                android:id="@+id/imgFotoUrlProd"
+                android:layout_width="match_parent"
+                android:layout_height="172dp"
+                android:layout_gravity="center"
+                app:srcCompat="@drawable/rubik2"
+                android:layout_weight="0.95" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="65dp"
+                android:orientation="horizontal"
+                android:layout_margin="20dp">
+
+                <TextView
+                    android:id="@+id/lblNombreProd"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.32"
+                    android:textSize="26sp"
+                    android:text="Nombre producto" />
+
+                <TextView
+                    android:id="@+id/lblPrecioProd"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.32"
+                    android:textSize="24sp"
+                    android:text="Bs. 0.00"
+                    android:textAlignment="textEnd" />
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/lblDescripcionProd"
+                android:layout_width="wrap_content"
+                android:layout_height="219dp"
+                android:layout_gravity="center"
+                android:layout_margin="5dp"
+                android:text="Comer un hamburguesa es un placer irresistible para muchos y es por eso que los restaurantes de comida rápida proliferan. El exquisito sabor de la carne al pan es una de las cosas en que muchas personas coinciden. Aunque para los más saludables sea una comida rápida que daña el cuerpo, es bueno conocer su trayectoria. Una hamburguesa es un alimento en forma de bocadillo de carne picada aglutinada en forma de filete, cocinado a la parrilla o a la plancha, aunque también puede freírse u hornearse. Fuera del ámbito de habla hispana es más común encontrar la denominación inglesa burger. Se presenta en un pan ligero partido en dos que posee una forma de óvalo. Suele estar acompañada de aros de cebolla, hojas de lechuga, alguna rodaja de tomate, láminas de encurtidos, papas fritas etc."
+                />
+        </LinearLayout>
+    </ScrollView>
+
+</RelativeLayout>

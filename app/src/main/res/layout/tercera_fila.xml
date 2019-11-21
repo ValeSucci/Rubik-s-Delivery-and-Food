@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <LinearLayout
+        android:id="@+id/lyhProductoExtra"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="30dp"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_weight="0.78">
+
+            <TextView
+                android:id="@+id/textViewItemName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="5dp"
+                android:layout_marginLeft="45dp"
+                android:layout_weight="1"
+                android:text="Text View"
+                android:textColor="@color/colorBlack"
+                android:textSize="18sp" />
+
+            <TextView
+                android:id="@+id/textViewItemPrecio"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="5dp"
+                android:layout_marginLeft="45dp"
+                android:layout_weight="1"
+                android:text="Text View"
+                android:textColor="@color/colorBlack"
+                android:textSize="18sp" />
+
+        </LinearLayout>
+
+        <ImageButton
+            android:id="@+id/imgbtnChecke"
+            app:srcCompat="@android:drawable/checkbox_off_background"
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            android:layout_gravity="center_vertical"
+            android:layout_weight="0.01"
+            android:layout_marginEnd="20dp"
+            android:background="@color/colorGray"
+            android:padding="5dp" />
+
+    </LinearLayout>
+
+
+</LinearLayout>

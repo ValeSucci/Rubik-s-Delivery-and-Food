@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="16dp"
+    android:paddingLeft="64dp"
+    android:paddingRight="64dp"
+    android:paddingTop="16dp"
+    tools:context="notanamelessentreprise.rubiksdeliveryandfood.LoginActivity"
+    android:background="@drawable/backgroundlogin">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentStart="true">
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="486dp">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:layout_centerVertical="true"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/textView"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="25dp"
+                        android:fontFamily="cursive"
+                        android:gravity="center"
+                        android:text="Bienvenido a "
+                        android:textColor="@android:color/holo_red_dark"
+                        android:textSize="30sp"
+                        android:textStyle="bold" />
+
+                    <ImageView
+                        android:id="@+id/imgLogo"
+                        android:layout_width="228dp"
+                        android:layout_height="199dp"
+                        android:layout_marginBottom="10dp"
+                        app:srcCompat="@drawable/logorubik2" />
+
+                    <EditText
+                        android:id="@+id/txtUsuario"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:ems="10"
+                        android:hint="Nombre de Usuario"
+                        android:inputType="textPersonName" />
+
+                    <EditText
+                        android:id="@+id/txtPassword"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="15dp"
+                        android:ems="10"
+                        android:hint="Password"
+                        android:inputType="textPassword" />
+
+                    <Button
+                        android:id="@+id/btnLogin"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_horizontal"
+                        android:layout_marginBottom="20dp"
+                        android:text="Login" />
+
+                    <TextView
+                        android:id="@+id/lblregis"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:text="¿No tienes una cuenta?, ¡Regístrate! :D"
+                        android:textAlignment="center"
+                        android:textColor="@android:color/white"
+                        android:textSize="18sp"
+                        android:textStyle="bold|italic" />
+
+                    <TextView
+                        android:id="@+id/txtResultado"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center_horizontal"
+                        android:textColor="@android:color/black"
+                        android:textSize="18sp" />
+                </LinearLayout>
+            </RelativeLayout>
+        </LinearLayout>
+    </ScrollView>
+</RelativeLayout>

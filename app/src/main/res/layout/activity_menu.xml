@@ -1,0 +1,242 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="notanamelessentreprise.rubiksdeliveryandfood.MenuActivity">
+
+    <LinearLayout
+        android:id="@+id/linearLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:orientation="horizontal"
+        android:layout_margin="5dp"
+        android:weightSum="1">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+                <ImageView
+                    android:id="@+id/imageView2"
+                    android:layout_width="128dp"
+                    android:layout_height="150dp"
+                    app:srcCompat="@drawable/tumismo" />
+                <ImageButton
+                    android:id="@+id/imgbtnTutorial"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal" />
+        </LinearLayout>
+
+        <com.daimajia.slider.library.SliderLayout
+            android:id="@+id/slider"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+
+        <!---
+        <android.support.v4.view.ViewPager
+            android:id="@+id/viewPager"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"></android.support.v4.view.ViewPager> -->
+
+    </LinearLayout>
+
+    <ScrollView
+        android:id="@+id/scrollView2"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/linearLayout"
+        android:layout_marginTop="20dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginEnd="10dp"
+        android:layout_above="@+id/tlbVerOrden">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_below="@+id/linearLayout"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:orientation="horizontal"
+                android:paddingRight="50dp"
+                android:layout_marginBottom="5dp"
+                android:id="@+id/lyhHamburguesa"
+                >
+
+                <ImageView
+                    android:id="@+id/imgHamburguesa"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    app:srcCompat="@android:drawable/ic_lock_lock" />
+
+                <TextView
+                    android:id="@+id/lblHamburguesa"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:textSize="18sp"
+                    android:textColor="@color/colorBlack"
+                    android:text="Hamburguesa"
+                    android:layout_gravity="center"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:orientation="horizontal"
+                android:paddingRight="50dp"
+                android:layout_marginBottom="5dp"
+                android:id="@+id/lyhPizza">
+
+                <ImageView
+                    android:id="@+id/imgPizza"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    app:srcCompat="@android:drawable/ic_lock_lock" />
+
+                <TextView
+                    android:id="@+id/lblPizza"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:textSize="18sp"
+                    android:textColor="@color/colorBlack"
+                    android:text="Pizza"
+                    android:layout_gravity="center"
+                    />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:orientation="horizontal"
+                android:paddingRight="50dp"
+                android:layout_marginBottom="5dp"
+                android:id="@+id/lyhHotDog">
+
+                <ImageView
+                    android:id="@+id/imgHotDog"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    app:srcCompat="@android:drawable/ic_lock_lock" />
+
+                <TextView
+                    android:id="@+id/lblHotDog"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:textSize="18sp"
+                    android:textColor="@color/colorBlack"
+                    android:text="Hot Dog"
+                    android:layout_gravity="center"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:orientation="horizontal"
+                android:paddingRight="50dp"
+                android:layout_marginBottom="5dp"
+                android:id="@+id/lyhPollo">
+
+                <ImageView
+                    android:id="@+id/imgPollo"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    app:srcCompat="@android:drawable/ic_lock_lock" />
+
+                <TextView
+                    android:id="@+id/lblPollo"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:textSize="18sp"
+                    android:textColor="@color/colorBlack"
+                    android:text="Pollo"
+                    android:layout_gravity="center"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:orientation="horizontal"
+                android:paddingRight="50dp"
+                android:layout_marginBottom="5dp"
+                android:id="@+id/lyhExtras">
+
+                <ImageView
+                    android:id="@+id/imgExtras"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    app:srcCompat="@android:drawable/ic_lock_lock" />
+
+                <TextView
+                    android:id="@+id/lblExtras"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:textSize="18sp"
+                    android:textColor="@color/colorBlack"
+                    android:text="Extras"
+                    android:layout_gravity="center"/>
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+    </ScrollView>
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/tlbVerOrden"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginLeft="12dp"
+        android:layout_marginRight="12dp"
+        android:background="@color/colorAccent"
+        android:minHeight="?attr/actionBarSize"
+        android:theme="?attr/actionBarTheme" />
+
+    <TextView
+        android:id="@+id/lblPrecioTotal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="0.00"
+        android:textSize="24sp"
+        android:textColor="@color/colorWhite"
+        android:layout_marginEnd="20dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignEnd="@+id/scrollView2"
+        android:layout_marginBottom="9dp" />
+
+    <TextView
+        android:id="@+id/lblVerOrden"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="40dp"
+        android:text="Ver Orden"
+        android:textSize="28sp"
+        android:padding="2dp"
+        android:textColor="@color/colorWhite"
+        android:layout_alignStart="@+id/tlbVerOrden"
+        android:layout_alignBottom="@+id/lblPrecioTotal" />
+
+</RelativeLayout>

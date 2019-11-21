@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical">
+
+    <!--<ExpandableListView
+        android:id="@+id/simpleExpandableListView"
+        android:layout_width="match_parent"
+        android:layout_height="fill_parent"
+        android:divider="#f00"
+        android:childDivider="#0f0"
+        android:dividerHeight="1dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentStart="true"
+        android:layout_margin="20dp"/>-->
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/tlbVerOrdenE">
+
+        <LinearLayout
+            android:id="@+id/linear_listview"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" />
+    </ScrollView>
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/tlbVerOrdenE"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:background="@color/colorBlue"
+        android:minHeight="?attr/actionBarSize"
+        android:theme="?attr/actionBarTheme"
+        android:layout_marginRight="12dp"
+        android:layout_marginLeft="12dp"/>
+
+    <TextView
+        android:id="@+id/lblPrecioTotalE"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="0.00"
+        android:textSize="24sp"
+        android:textColor="@color/colorWhite"
+        android:layout_marginBottom="11dp"
+        android:layout_marginRight="7dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignEnd="@+id/btnimgAnadirPedidoE" />
+
+    <android.support.design.widget.FloatingActionButton
+        android:id="@+id/btnimgAnadirPedidoE"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:clickable="true"
+        app:fabSize="mini"
+        app:srcCompat="@android:color/background_dark"
+        android:layout_above="@+id/tlbVerOrdenE"
+        android:layout_alignEnd="@+id/tlbVerOrdenE"
+        android:layout_marginEnd="13dp" />
+
+    <TextView
+        android:id="@+id/lblVerOrdenE"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Ver Orden"
+        android:textSize="28sp"
+        android:padding="2dp"
+        android:textColor="@color/colorWhite"
+        android:layout_alignStart="@+id/tlbVerOrdenE"
+        android:layout_alignBottom="@+id/lblPrecioTotalE"
+        android:layout_marginStart="40dp" />
+
+
+</RelativeLayout>

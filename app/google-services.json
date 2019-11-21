@@ -1,0 +1,55 @@
+{
+  "project_info": {
+    "project_number": "815041871098",
+    "firebase_url": "https://rubiks-delivery-and-food.firebaseio.com",
+    "project_id": "rubiks-delivery-and-food",
+    "storage_bucket": "rubiks-delivery-and-food.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:815041871098:android:1a3ef0254b0234d0",
+        "android_client_info": {
+          "package_name": "notanamelessentreprise.rubiksdeliveryandfood"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "815041871098-d46is9f1mnctajh11ca45n0bgr1lm1hu.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "notanamelessentreprise.rubiksdeliveryandfood",
+            "certificate_hash": "70e408b7ce0df6849410dc82154c62b3522fe8ed"
+          }
+        },
+        {
+          "client_id": "815041871098-bh6hm6ilmo6o0mtmoiui83tuptqe40m7.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDTLivtVDxHCibV5VagGbKOEWbXVCaoJYY"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "815041871098-bh6hm6ilmo6o0mtmoiui83tuptqe40m7.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

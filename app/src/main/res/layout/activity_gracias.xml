@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/backgrounddefault2"
+    tools:context="notanamelessentreprise.rubiksdeliveryandfood.GraciasActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        tools:layout_editor_absoluteX="20dp"
+        tools:layout_editor_absoluteY="29dp">
+
+        <TextView
+            android:id="@+id/txtGracias"
+            android:layout_width="344dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:fontFamily="cursive"
+            android:gravity="center"
+            android:text="¡Gracias por su compra!"
+            android:textColor="@android:color/black"
+            android:textSize="50dp"
+            android:textStyle="bold"
+            tools:layout_editor_absoluteX="0dp"
+            tools:layout_editor_absoluteY="68dp" />
+
+        <ImageView
+            android:id="@+id/imageView"
+            android:layout_width="220dp"
+            android:layout_height="204dp"
+            android:layout_gravity="center"
+            android:layout_marginBottom="20dp"
+            app:srcCompat="@drawable/rubikanimado3" />
+
+        <TextView
+            android:id="@+id/textView6"
+            android:layout_width="252dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginBottom="20dp"
+            android:gravity="center"
+            android:text="* El costo de envío no exederá los 20bs."
+            android:textColor="@color/colorWhite"
+            android:textSize="18sp"
+            android:textStyle="bold|italic" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/btnHecho"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="Hecho" />
+
+            <Button
+                android:id="@+id/btnregistro"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Registrarse" />
+        </LinearLayout>
+
+    </LinearLayout>
+
+</ScrollView>

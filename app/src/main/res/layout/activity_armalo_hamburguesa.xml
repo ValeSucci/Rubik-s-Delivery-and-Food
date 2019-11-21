@@ -1,0 +1,180 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="horizontal"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/lyHorizontalPrincipal"
+    android:background="@drawable/backgroundarmalo"
+    tools:context="notanamelessentreprise.rubiksdeliveryandfood.ArmaloHamburguesaActivity">
+
+
+<ScrollView
+        android:id="@+id/lista_ingredientes"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="2">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <ImageView
+                android:id="@+id/imgPanSuperior"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_margin="10dp"
+                app:srcCompat="@drawable/pan_tradicional_superior" />
+
+            <ImageView
+                android:id="@+id/imgCarneRes"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_margin="10dp"
+                app:srcCompat="@drawable/btnhamres" />
+
+            <ImageView
+                android:id="@+id/imgCarnePollo"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_margin="10dp"
+                app:srcCompat="@drawable/btnhampollo" />
+
+            <ImageView
+                android:id="@+id/imgCarneVegetariana"
+                android:layout_width="wrap_content"
+                android:layout_height="40dp"
+                android:layout_margin="10dp"
+                app:srcCompat="@drawable/btnhamveg" />
+
+            <ImageView
+                android:id="@+id/imgQueso"
+                android:layout_width="match_parent"
+                android:layout_height="49dp"
+                android:layout_margin="10dp"
+                app:srcCompat="@drawable/btnquesos" />
+
+            <ImageView
+                android:id="@+id/imgVegetales"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_margin="10dp"
+                app:srcCompat="@drawable/btnverduras" />
+
+            <ImageView
+                android:id="@+id/imgAdherezo"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_margin="10dp"
+                app:srcCompat="@drawable/btnadherezos" />
+
+            <ImageView
+                android:id="@+id/imgOtrasCarnes"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_margin="10dp"
+                app:srcCompat="@drawable/btnotrascarnes" />
+
+            <ImageView
+                android:id="@+id/imgHuevo"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_margin="10dp"
+                app:srcCompat="@drawable/huevo_frito" />
+
+            <ImageView
+                android:id="@+id/imgPanInferior"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                app:srcCompat="@drawable/pan_tradicional_inferior"
+                android:layout_margin="10dp"/>
+
+
+        </LinearLayout>
+
+    </ScrollView>
+
+    <RelativeLayout
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="8">
+
+        <TextView
+            android:id="@+id/lblPrecio"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_marginBottom="10dp"
+            android:layout_marginEnd="10dp"
+            android:layout_marginTop="10dp"
+            android:padding="15dp"
+            android:text="Bs. 0.00"
+            android:textSize="24sp" />
+
+        <LinearLayout
+            android:id="@+id/lyHorizontal"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal"
+            android:layout_above="@+id/btnfCarrito"
+            android:layout_below="@+id/lblPrecio"
+            android:weightSum="1">
+
+            <ScrollView
+                android:id="@+id/scrVistaArmado"
+                android:layout_width="127dp"
+                android:layout_height="match_parent"
+                android:layout_above="@+id/btnfCarrito"
+                android:layout_alignParentStart="true"
+                android:layout_below="@+id/lblPrecio">
+
+                <LinearLayout
+                    android:id="@+id/lyVertical"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                </LinearLayout>
+            </ScrollView>
+
+            <ListView
+                android:id="@+id/lista"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_above="@+id/btnfCarrito"
+                android:layout_alignStart="@+id/lblPrecio"
+                android:layout_below="@+id/lblPrecio"
+                android:textAlignment="textStart"
+                android:textSize="4sp" />
+
+        </LinearLayout>
+
+        <android.support.design.widget.FloatingActionButton
+            android:id="@+id/btnfCarrito"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignEnd="@+id/lblPrecio"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="18dp"
+            android:layout_marginEnd="35dp"
+            android:clickable="true"
+            app:fabSize="mini"
+            app:srcCompat="@drawable/rubik2" />
+
+        <!--
+        <AdapterViewFlipper
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_above="@+id/btnfCarrito"
+            android:layout_below="@+id/lblPrecio"
+            android:layout_alignStart="@+id/lblPrecio"
+            android:background="@color/colorPrimaryDark"/>
+-->
+    </RelativeLayout>
+
+
+</LinearLayout>
+

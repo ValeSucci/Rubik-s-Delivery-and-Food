@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="notanamelessentreprise.rubiksdeliveryandfood.ContactenosActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <ImageView
+            android:id="@+id/imgContactenos"
+            android:layout_width="284dp"
+            android:layout_height="50dp"
+            android:layout_margin="10dp"
+            android:background="@drawable/logo"
+            android:layout_weight="0.78"
+            android:layout_gravity="center"/>
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical" >
+
+                <TextView
+                    android:id="@+id/lblDir1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Direccion:Plaza San Martin Lima Peru\nCorreo:valesuc98@gmail.com\nTelefono:65802758"
+                    android:gravity="center"
+                    android:textColor="@color/colorBlue"
+                    android:layout_marginBottom="10dp"
+                    android:layout_marginTop="10dp"
+                    android:textSize="17dp"/>
+                <TextView
+                    android:id="@+id/lblDir2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Direccion:Ovejuyo \nCorreo:ros.love.may@gmail.com\nTelefono:67060037"
+                    android:gravity="center"
+                    android:textColor="@color/colorPurple"
+                    android:layout_marginBottom="10dp"
+                    android:layout_marginTop="10dp"
+                    android:textSize="17dp"/>
+                <TextView
+                    android:id="@+id/lblDir3"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Direccion:San Pedro\nCorreo:valealiaga2121@gmail.com\nTelefono:67010256"
+                    android:gravity="center"
+                    android:textColor="@color/colorBlue1"
+                    android:layout_marginBottom="10dp"
+                    android:layout_marginTop="10dp"
+                    android:textSize="17dp"/>
+
+                <TextView
+                    android:id="@+id/lblDir4"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Direccion:San Miguel\nCorreo:rubick@gmail.com\nTelefono:67452899"
+                    android:gravity="center"
+                    android:textColor="@color/colorBlue1"
+                    android:layout_marginBottom="10dp"
+                    android:layout_marginTop="10dp"
+                    android:textSize="17dp"/>
+            </LinearLayout>
+        </ScrollView>
+
+    </LinearLayout>
+</RelativeLayout>

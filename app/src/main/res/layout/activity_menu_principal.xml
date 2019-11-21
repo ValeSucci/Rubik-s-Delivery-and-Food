@@ -1,0 +1,194 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="20dp"
+    tools:context="notanamelessentreprise.rubiksdeliveryandfood.MenuPrincipalActivity">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="13dp"
+        android:layout_marginTop="11dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical" >
+            <TextView
+                android:id="@+id/lblEspeciales"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:fontFamily="cursive"
+                android:text="¡Rubik's Especiales!"
+                android:textColor="@android:color/black"
+                android:textSize="30sp"
+                android:textStyle="bold|italic" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal">
+
+                <LinearLayout
+                    android:id="@+id/lyvMenu"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="match_parent"
+                    android:padding="5dp"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:id="@+id/imgMenu"
+                        android:layout_width="172dp"
+                        android:layout_height="141dp"
+                        android:layout_gravity="center_horizontal" />
+
+                    <TextView
+                        android:id="@+id/lblMenu"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center_horizontal"
+                        android:padding="2dp"
+                        android:textColor="@android:color/black"
+                        android:text="Menu" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/lyvContactenos"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="match_parent"
+                    android:padding="5dp"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:id="@+id/imgContactenos"
+                        android:layout_width="172dp"
+                        android:layout_height="141dp"
+                        android:layout_gravity="center_horizontal" />
+
+                    <TextView
+                        android:id="@+id/lblContactenos"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center_horizontal"
+                        android:padding="2dp"
+                        android:textColor="@android:color/black"
+                        android:text="Contactenos" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal">
+
+                <LinearLayout
+                    android:id="@+id/lyvCalculadora"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="match_parent"
+                    android:padding="5dp"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:id="@+id/imgCalculadora"
+                        android:layout_width="172dp"
+                        android:layout_height="141dp"
+                        android:layout_gravity="center_horizontal" />
+
+                    <TextView
+                        android:id="@+id/lblCalculadora"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center_horizontal"
+                        android:padding="2dp"
+                        android:textColor="@android:color/black"
+                        android:text="Calculadora" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/lyvVideos"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="match_parent"
+                    android:padding="5dp"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:id="@+id/imgVideos"
+                        android:layout_width="172dp"
+                        android:layout_height="141dp"
+                        android:layout_gravity="center_horizontal" />
+
+                    <TextView
+                        android:id="@+id/lblVideos"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center_horizontal"
+                        android:padding="2dp"
+                        android:textColor="@android:color/black"
+                        android:text="Videos" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal">
+
+                <LinearLayout
+                    android:id="@+id/lyvPerfil"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="match_parent"
+                    android:padding="5dp"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:id="@+id/imgPerfil"
+                        android:layout_width="172dp"
+                        android:layout_height="141dp"
+                        android:layout_gravity="center_horizontal" />
+
+                    <TextView
+                        android:id="@+id/lblPerfil"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center_horizontal"
+                        android:padding="2dp"
+                        android:textColor="@android:color/black"
+                        android:text="Perfil" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="match_parent"
+                    android:padding="5dp"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:id="@+id/imageView6"
+                        android:layout_width="172dp"
+                        android:layout_height="141dp"
+                        android:layout_gravity="center_horizontal" />
+
+                    <TextView
+                        android:id="@+id/textView6"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center_horizontal"
+                        android:padding="2dp"
+                        android:text="" />
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+</RelativeLayout>
